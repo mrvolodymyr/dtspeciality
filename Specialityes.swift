@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Speciality: Codable {
+struct Speciality: Decodable {
     var speciality_code: String
     var speciality_id: String
     var speciality_name: String
@@ -24,7 +24,4 @@ struct Speciality: Codable {
         self.speciality_name = speciality_name
     }
 }
-
-
-//}
 
