@@ -35,7 +35,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func createNewSpeciality(_ sender: Any) {
-        guard let createSpecialityViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateSpecialityViewController") as? CreateSpecialityViewController else  { return }
+        guard let createSpecialityViewController = UIStoryboard(name: "Speciality", bundle: nil).instantiateViewController(withIdentifier: "CreateSpecialityViewController") as? CreateSpecialityViewController else  { return }
         self.navigationController?.pushViewController(createSpecialityViewController, animated: true)
     }
     
